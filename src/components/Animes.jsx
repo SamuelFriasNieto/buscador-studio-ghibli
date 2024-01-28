@@ -2,10 +2,10 @@ export function ListOfAnimes ( {animes} ) {
     return (
         <ul>
         {animes.map(anime => (
-          <li key={anime.mal_id}>
+          <li key={anime.id}>
             <h3>{anime.title}</h3>
             <p>{anime.year}</p>
-            <img src={anime.images.jpg.image_url} alt="" />
+            <img src={anime.poster} alt="" />
           </li>
         ))}
         </ul>
