@@ -55,7 +55,7 @@ function App() {
       </header>
 
       <main>
-        <h1>Pelis</h1>
+        <h1>Animes</h1>
         <Animes animes={animes}/>
       </main>
 

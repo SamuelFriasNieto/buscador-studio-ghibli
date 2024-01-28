@@ -14,7 +14,7 @@ export function useAnimes(query) {
     const getAnimes = () => {
         if(query) {
             // setResponseAnimes(results)
-            fetch(`https://api.jikan.moe/v4/anime?q=${query}`)
+            fetch(`https://api.jikan.moe/v4/anime?q=${query}&sfw=true`)
                 .then(res => res.json())
                 .then(json => setResponseAnimes(json))
         } else {
